@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_HEizYRVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.application" bindingContexts="_HEizYBVrEeeUSIrAEN_8BA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_EyTRsBVwEeeUSIrAEN_8BA" elementId="e4fxapp.app.trimmedwindow.0">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_E-hWgBV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_JLshkBV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.perspective.0">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_vmSYMBV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.partsashcontainer.0">
+          <children xsi:type="basic:PartStack" xmi:id="_3Udk0BV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_KBUskBV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part1" label="Part1"/>
+            <children xsi:type="basic:Part" xmi:id="_MVHUIBV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part2" label="Part2"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_4mZt0BV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.partstack.1">
+            <children xsi:type="basic:Part" xmi:id="_FckvABV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part3" label="Part3"/>
+            <children xsi:type="basic:Part" xmi:id="_IAJfABV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part4" label="part4"/>
+          </children>
+        </children>
+      </children>
+    </children>
+  </children>
+  <rootContext xmi:id="_HEizYBVrEeeUSIrAEN_8BA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_HEizYhVrEeeUSIrAEN_8BA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_HEizYxVrEeeUSIrAEN_8BA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <addons xmi:id="_HEizZBVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_HEizZRVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_HEizZhVrEeeUSIrAEN_8BA" elementId="org.eclipse.fx.ui.keybindings.e4.service" contributionURI="bundleclass://org.eclipse.fx.ui.keybindings.e4/org.eclipse.fx.ui.keybindings.e4.BindingServiceAddon"/>
+  <addons xmi:id="_HEizZxVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_HEizaBVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_HEizaRVrEeeUSIrAEN_8BA" elementId="org.eclipse.fx.ui.keybindings.e4.model" contributionURI="bundleclass://org.eclipse.fx.ui.keybindings.e4/org.eclipse.fx.ui.keybindings.e4.BindingProcessingAddon"/>
+  <addons xmi:id="_HEizahVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.ui.workbench.addons.HandlerProcessingAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_L5sH8BVsEeeUSIrAEN_8BA" elementId="e4fxapp.app.addon.0" contributionURI="bundleclass://org.eclipse.fx.ui.workbench.renderers.base/org.eclipse.fx.ui.workbench.renderers.base.addons.MinMaxAddon"/>
+  <addons xmi:id="_SnFhIBV5EeeUSIrAEN_8BA" elementId="e4fxapp.app.addon.1" contributionURI="bundleclass://org.eclipse.fx.ui.workbench.renderers.base/org.eclipse.fx.ui.workbench.renderers.base.addons.CleanUpAddon"/>
+  <addons xmi:id="_Jf3u4BWCEeeyirSw1pDjbw" elementId="e4fxapp.app.addon.2" contributionURI="bundleclass://e4fxapp.app/MyAddon.MyAddon">
+    <persistedState key="PERSISTED" value="persisted"/>
+  </addons>
+</application:Application>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+	id="e4fxapp.app.feature"
+	label="e4fxapp Application Feature"
+	version="1.0.0.qualifier"
+	provider-name="xscada"
+	>
+		<description url="http://www.efxclipse.org">
+			TODO FILL WITH CONTENT
+		</description>
+
+		<copyright url="http://www.efxclipse.org">
+			TODO FILL WITH CONTENT
+		</copyright>
+
+		<license url="http://www.efxclipse.org">
+			TODO FILL WITH CONTENT
+		</license>
+
+   		<plugin id="e4fxapp.app" install-size="0" version="0.0.0" unpack="false" />
+
+
+</feature>
