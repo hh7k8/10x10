@@ -33,9 +33,12 @@
   <addons xmi:id="_HEizahVrEeeUSIrAEN_8BA" elementId="org.eclipse.e4.ui.workbench.addons.HandlerProcessingAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_L5sH8BVsEeeUSIrAEN_8BA" elementId="e4fxapp.app.addon.0" contributionURI="bundleclass://org.eclipse.fx.ui.workbench.renderers.base/org.eclipse.fx.ui.workbench.renderers.base.addons.MinMaxAddon"/>
   <addons xmi:id="_SnFhIBV5EeeUSIrAEN_8BA" elementId="e4fxapp.app.addon.1" contributionURI="bundleclass://org.eclipse.fx.ui.workbench.renderers.base/org.eclipse.fx.ui.workbench.renderers.base.addons.CleanUpAddon"/>
-  <addons xmi:id="_Jf3u4BWCEeeyirSw1pDjbw" elementId="e4fxapp.app.addon.2" contributionURI="bundleclass://e4fxapp.app/MyAddon.MyAddon">
+  <addons xmi:id="_Jf3u4BWCEeeyirSw1pDjbw" elementId="e4fxapp.app.addon.2" contributionURI="bundleclass://e4fxapp.app/myAddon.MyAddon">
     <persistedState key="2ndKey" value="second value"/>
     <persistedState key="PERSISTED" value="persisted"/>
   </addons>
   <addons xmi:id="_73qrUBcXEeeWnMj6BMWXUA" elementId="e4fxapp.app.addon.3" contributionURI="bundleclass://org.eclipse.fx.ui.workbench.renderers.base/org.eclipse.fx.ui.workbench.renderers.base.addons.DnDAddon"/>
+  <addons xmi:id="_4GsA4BfDEeea2u6RSjs5hg" elementId="e4fxapp.app.addon.4" contributionURI="bundleclass://e4fxapp.app/myAddon.MyAddon">
+    <persistedState key="junk" value="junk"/>
+  </addons>
 </application:Application>
