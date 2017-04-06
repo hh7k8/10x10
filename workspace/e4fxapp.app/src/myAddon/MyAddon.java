@@ -17,8 +17,8 @@ public class MyAddon {
 	@Inject
 	MyAddon(IEventBroker eventBroker, EModelService modelService, MAddon addon){
 		Map<String, String> persist = addon.getPersistedState();
-		System.out.println(persist);
-		System.out.println("In myAddon");
+//		System.out.println(persist);
+//		System.out.println("In myAddon");
 		
 		this.modelService = modelService;
 //		eventBroker.subscribe("TEST", this::handleWidget);

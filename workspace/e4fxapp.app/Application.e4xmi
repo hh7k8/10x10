@@ -5,7 +5,10 @@
       <children xsi:type="advanced:Perspective" xmi:id="_JLshkBV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.perspective.0">
         <children xsi:type="basic:PartSashContainer" xmi:id="_vmSYMBV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.partsashcontainer.0">
           <children xsi:type="basic:PartStack" xmi:id="_3Udk0BV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.partstack.0">
-            <children xsi:type="basic:Part" xmi:id="_KBUskBV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part1" label="Part1"/>
+            <children xsi:type="basic:Part" xmi:id="_KBUskBV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part1" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test" label="Part1">
+              <properties key="title" value="title"/>
+              <properties key="namespace prefix" value="namespace prefix"/>
+            </children>
             <children xsi:type="basic:Part" xmi:id="_MVHUIBV2EeeUSIrAEN_8BA" elementId="e4fxapp.app.part.part2" label="Part2"/>
           </children>
           <children xsi:type="basic:PartStack" xmi:id="_4mZt0BV1EeeUSIrAEN_8BA" elementId="e4fxapp.app.partstack.1">
