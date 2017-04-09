@@ -13,8 +13,9 @@
 	
 </extension>
 
-<extension id="comm" point="org.eclipse.core.runtime.applications">
-	<application>
+<extension id="Comm" point="org.eclipse.core.runtime.applications">
+	<application
+       visible="false">
          <run class="nonUI.NonUI"/>
     </application> 
 </extension>
