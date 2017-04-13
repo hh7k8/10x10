@@ -4,7 +4,6 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.fx.core.event.EventBus;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
@@ -14,7 +13,7 @@ public class E4Poster {
 	private IEventBroker eventBroker;
 	
 	@PostConstruct
-	void initUI(BorderPane pane, EventBus eventBus) {
+	void initUI(BorderPane pane) {
 /* 		for (int i=1; i<10; i++) {
  			eventBroker.post("MYTOPIC", "my data" + i);
  			try {

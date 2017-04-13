@@ -9,7 +9,6 @@ import javax.inject.Inject;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.services.events.IEventBroker;
 import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.fx.core.event.EventBus;
 import org.osgi.service.event.Event;
 
 import javafx.scene.control.Button;
@@ -24,7 +23,7 @@ public class E4Test {
 	private IEventBroker eventBroker;
 	
 	@PostConstruct
-	void initUI(BorderPane pane, EventBus eventBus) {
+	void initUI(BorderPane pane) {
 		class Pressure {
 			public String description;
 			public double pressure;
