@@ -17,20 +17,33 @@ public class MyAddon {
 //		Map<String, String> persist = addon.getPersistedState();
 //		System.out.println(persist);
 //		System.out.println("In myAddon");
+		System.out.println(eventBroker);
 		
 		this.modelService = modelService;
 		System.out.println(this.modelService.toString());  // do this to get rid of warning
 //		eventBroker.subscribe("TEST", this::handleWidget);
+		final class MyAddonThread extends Thread{
+			public void run() {
+				int i = 0;
+				System.out.println(eventBroker);
+				while (true)
+				{
+					System.out.println(i++);
+					try {
+						Thread.sleep(5000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+		(new MyAddonThread()).start();
+		}
 
-		/*		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-*/
-		}
+ 		
 //	void handleWidget(Event event){
 //		
 //	}
+ 
 }
