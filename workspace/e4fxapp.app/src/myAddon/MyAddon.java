@@ -5,6 +5,7 @@ import javax.inject.Inject;
 import org.eclipse.e4.core.services.events.IEventBroker;
 import org.eclipse.e4.ui.model.application.MAddon;
 import org.eclipse.e4.ui.workbench.modeling.EModelService;
+import org.osgi.service.event.Event;
 
 
 
@@ -15,20 +16,18 @@ public class MyAddon {
 	@Inject
 	MyAddon(IEventBroker eventBroker, EModelService modelService, MAddon addon){
 //		Map<String, String> persist = addon.getPersistedState();
-//		System.out.println(persist);
-//		System.out.println("In myAddon");
-		System.out.println(eventBroker);
 		
 		this.modelService = modelService;
-		System.out.println(this.modelService.toString());  // do this to get rid of warning
-//		eventBroker.subscribe("TEST", this::handleWidget);
+//		System.out.println(this.modelService.toString());  // do this to get rid of warning
+
+		eventBroker.subscribe("TEST", this::handleWidget);
+
 		final class MyAddonThread extends Thread{
 			public void run() {
 				int i = 0;
-				System.out.println(eventBroker);
 				while (true)
 				{
-					System.out.println(i++);
+					eventBroker.post("DATA", i++);
 					try {
 						Thread.sleep(5000);
 					} catch (InterruptedException e) {
@@ -42,8 +41,8 @@ public class MyAddon {
 		}
 
  		
-//	void handleWidget(Event event){
-//		
-//	}
+	void handleWidget(Event event){
+		System.out.println(event);
+	}
  
 }

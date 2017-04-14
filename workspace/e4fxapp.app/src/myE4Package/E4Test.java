@@ -13,6 +13,7 @@ import org.osgi.service.event.Event;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
 
 public class E4Test {
 	@Inject
@@ -22,18 +23,19 @@ public class E4Test {
 	@Inject
 	private IEventBroker eventBroker;
 	
+	Text t = new Text("Initial value");
+	
 	@PostConstruct
 	void initUI(BorderPane pane) {
 		class Pressure {
 			public String description;
 			public double pressure;
 		}
-		System.err.println("Starting E4Test");
-		eventBroker.subscribe("MYTOPIC", this::printPost);
+		eventBroker.subscribe("DATA", this::printPost);
 		Map<String, String> props = part.getProperties();
-		System.out.println(props.get("title"));
-		System.out.println(props.get("namespace prefix"));
-		System.out.println("y-axis");
+//		System.out.println(props.get("title"));
+//		System.out.println(props.get("namespace prefix"));
+//		System.out.println("y-axis");
 		List<String> vars = part.getVariables();
 		for (String temp : vars) {
 			System.out.println(temp);
@@ -47,9 +49,10 @@ public class E4Test {
 		pres2.pressure = 12.34;
 		context.set("junk", pres2);
 		Pressure retrieve = (Pressure) context.get("junk");
-		System.out.println(retrieve.description + " " + retrieve.pressure);
+//		System.out.println(retrieve.description + " " + retrieve.pressure);
  		Button b = new Button("button");
 		pane.setCenter(b);
+		pane.setBottom(t);
 	}
 	/*
 	 *	getPropertyNames returns 2 strings - org.eclipse.e4.data and event.topics
@@ -59,10 +62,12 @@ public class E4Test {
 	 *	with the first string (data)
 	 */
 	void printPost(Event event){
-		System.out.println(event.toString());
-	//	System.out.println(event.getTopic());
-	//	System.out.println(event.getPropertyNames()[1]);
-	//	System.out.println(event.getProperty("event.topics"));
+		t.setText((event.getProperty("org.eclipse.e4.data").toString()));
+		
+//		System.out.println(event.getTopic());
+//		System.out.println(event.getPropertyNames()[1]);
+//		System.out.println(event.getProperty("event.topics"));
+//		System.out.println(event.getProperty("org.eclipse.e4.data"));
 	}
 
 }
