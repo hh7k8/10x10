@@ -1,5 +1,6 @@
 package myE4Package;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -9,9 +10,12 @@ import javax.inject.Inject;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.services.events.IEventBroker;
 import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+import org.eclipse.fx.ui.di.FXMLLoader;
+import org.eclipse.fx.ui.di.FXMLLoaderFactory;
 import org.osgi.service.event.Event;
 
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 
@@ -26,7 +30,7 @@ public class E4Test {
 	Text t = new Text("Initial value");
 	
 	@PostConstruct
-	void initUI(BorderPane pane) {
+	void initUI(BorderPane pane, @FXMLLoader FXMLLoaderFactory factory) {
 		class Pressure {
 			public String description;
 			public double pressure;
@@ -51,7 +55,20 @@ public class E4Test {
 		Pressure retrieve = (Pressure) context.get("junk");
 //		System.out.println(retrieve.description + " " + retrieve.pressure);
  		Button b = new Button("button");
-		pane.setCenter(b);
+// 		FXMLLoader fxmlloader = new FXMLLoader();
+// 		Parent root = new FXMLLoader.load(getClass().getResource("interface.fxml"));
+//        System.out.println(new java.io.File("").getAbsolutePath());
+//        System.out.println(E4Test.class.getClassLoader().getResource("").getPath());
+
+ 		AnchorPane fxmlPane = null;
+		try {
+			fxmlPane = (AnchorPane) factory.loadRequestorRelative("/lg.fxml").load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		pane.setTop(b);
+		pane.setCenter(fxmlPane);
 		pane.setBottom(t);
 	}
 	/*
