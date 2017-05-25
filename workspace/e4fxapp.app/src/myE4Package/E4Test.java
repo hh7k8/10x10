@@ -59,7 +59,7 @@ public class E4Test {
 //		System.out.println(retrieve.description + " " + retrieve.pressure);
 
 		Button b = new Button("button");
-  		loader.setLocation(getClass().getResource("/lg.fxml"));
+  		loader.setLocation(getClass().getResource("lg.fxml"));
 		pane.setTop(b);
 		try {
 			pane.setCenter(loader.load());
