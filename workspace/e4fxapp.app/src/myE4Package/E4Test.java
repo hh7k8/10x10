@@ -87,7 +87,7 @@ public class E4Test {
 		Button b = new Button("button");
   		loader.setLocation(getClass().getResource("Lg.fxml"));
   		
-  		rect = new Rectangle(0, 0, 200, 200);
+  		rect = new Rectangle(0, 0, 200, 20);
 
 		timeline = new Timeline();
 		for (int i = 0; i < 10; i++) {
@@ -137,6 +137,8 @@ public class E4Test {
 	 *	with the first string (data)
 	 */
 	void printPost(Event event){
+		int i = (int) event.getProperty("org.eclipse.e4.data");
+		if (i % 2 == 1) timeline.play(); else timeline.stop(); 
 		t.setText((event.getProperty("org.eclipse.e4.data").toString()));
 		
 //		System.out.println(event.getTopic());
