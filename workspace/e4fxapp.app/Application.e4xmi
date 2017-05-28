@@ -24,6 +24,23 @@
           <children xsi:type="basic:Part" xmi:id="_LKmLYEMhEee0Rd7kKu5z7A" elementId="e4fxapp.app.part.6" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
           <children xsi:type="basic:Part" xmi:id="_NexNcEMhEee0Rd7kKu5z7A" elementId="e4fxapp.app.part.7" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
           <children xsi:type="basic:Part" xmi:id="_QKvrgEMhEee0Rd7kKu5z7A" elementId="e4fxapp.app.part.8" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_lO0y8EPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.9" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_s5A3cEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.10" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_vhU9gEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.11" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_w6mdkEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.12" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_ySpOkEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.13" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_zpFdEEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.14" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_108QoEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.15" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_30u-IEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.16" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_5bzpoEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.17" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_6ingsEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.18" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_847QwEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.19" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_-YXqQEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.20" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="__xpKUEPJEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.21" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_BGZWwEPKEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.22" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_C0poUEPKEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.23" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_D3LcUEPKEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.24" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
+          <children xsi:type="basic:Part" xmi:id="_H0BsYEPKEeezjdYqQvoEaQ" elementId="e4fxapp.app.part.25" contributionURI="bundleclass://e4fxapp.app/myE4Package.E4Test"/>
         </children>
       </children>
     </children>

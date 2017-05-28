@@ -52,6 +52,16 @@ public class E4Test {
 	private Rectangle rect7;
 	private Rectangle rect8;
 	private Rectangle rect9;
+	private Rectangle rect10;
+	private Rectangle rect11;
+	private Rectangle rect12;
+	private Rectangle rect13;
+	private Rectangle rect14;
+	private Rectangle rect15;
+	private Rectangle rect16;
+	private Rectangle rect17;
+	private Rectangle rect18;
+	private Rectangle rect19;
 
 	
 	private Timeline timeline;
@@ -64,6 +74,16 @@ public class E4Test {
 	private Timeline timeline7;
 	private Timeline timeline8;
 	private Timeline timeline9;
+	private Timeline timeline10;
+	private Timeline timeline11;
+	private Timeline timeline12;
+	private Timeline timeline13;
+	private Timeline timeline14;
+	private Timeline timeline15;
+	private Timeline timeline16;
+	private Timeline timeline17;
+	private Timeline timeline18;
+	private Timeline timeline19;
 
 	
 	private double widthOfOneGradientCycle = 20.0;
@@ -85,6 +105,16 @@ public class E4Test {
 		timeline7.stop();
 		timeline8.stop();
 		timeline9.stop();
+		timeline10.stop();
+		timeline11.stop();
+		timeline12.stop();
+		timeline13.stop();
+		timeline14.stop();
+		timeline15.stop();
+		timeline16.stop();
+		timeline17.stop();
+		timeline18.stop();
+		timeline19.stop();
 
 	}
 	
@@ -120,8 +150,8 @@ public class E4Test {
   		
   		
   		
- // ******************* original rect and timeline 		
-  		rect = new Rectangle(0, 0, 200, 20);
+  	// ******************* original rect and timeline 		
+  		rect = new Rectangle(0, 0, 150, 20);
 		timeline = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -151,7 +181,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect1 = new Rectangle(0, 0, 200, 20);
+  		rect1 = new Rectangle(0, 0, 150, 20);
 		timeline1 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -181,7 +211,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect2 = new Rectangle(0, 0, 200, 20);
+  		rect2 = new Rectangle(0, 0, 150, 20);
 		timeline2 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -211,7 +241,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect3 = new Rectangle(0, 0, 200, 20);
+  		rect3 = new Rectangle(0, 0, 150, 20);
 		timeline3 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -241,7 +271,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect4 = new Rectangle(0, 0, 200, 20);
+  		rect4 = new Rectangle(0, 0, 150, 20);
 		timeline4 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -271,7 +301,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect5 = new Rectangle(0, 0, 200, 20);
+  		rect5 = new Rectangle(0, 0, 150, 20);
 		timeline5 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -301,7 +331,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect6 = new Rectangle(0, 0, 200, 20);
+  		rect6 = new Rectangle(0, 0, 150, 20);
 		timeline6 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -331,7 +361,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect7 = new Rectangle(0, 0, 200, 20);
+  		rect7 = new Rectangle(0, 0, 150, 20);
 		timeline7 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -361,7 +391,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect8 = new Rectangle(0, 0, 200, 20);
+  		rect8 = new Rectangle(0, 0, 150, 20);
 		timeline8 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -391,7 +421,7 @@ public class E4Test {
 		
   		
  // ******************* original rect and timeline 		
-  		rect9 = new Rectangle(0, 0, 200, 20);
+  		rect9 = new Rectangle(0, 0, 150, 20);
 		timeline9 = new Timeline();
 		for (int i = 0; i < 10; i++) {
 			int innerIterator = i;
@@ -419,8 +449,309 @@ public class E4Test {
 		timeline9.setCycleCount(Timeline.INDEFINITE);
 //************** end of rect and timeline
 		
+		// ******************* original rect and timeline 		
+  		rect10 = new Rectangle(0, 0, 150, 20);
+		timeline10 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect10.setFill(gradient);
+				}
+			});
+			timeline10.getKeyFrames().add(kf);
+		}
+		timeline10.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect11 = new Rectangle(0, 0, 150, 20);
+		timeline11 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect11.setFill(gradient);
+				}
+			});
+			timeline11.getKeyFrames().add(kf);
+		}
+		timeline11.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect12 = new Rectangle(0, 0, 150, 20);
+		timeline12 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect12.setFill(gradient);
+				}
+			});
+			timeline12.getKeyFrames().add(kf);
+		}
+		timeline12.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect13 = new Rectangle(0, 0, 150, 20);
+		timeline13 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect13.setFill(gradient);
+				}
+			});
+			timeline13.getKeyFrames().add(kf);
+		}
+		timeline13.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect14 = new Rectangle(0, 0, 150, 20);
+		timeline14 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect14.setFill(gradient);
+				}
+			});
+			timeline14.getKeyFrames().add(kf);
+		}
+		timeline14.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect15 = new Rectangle(0, 0, 150, 20);
+		timeline15 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect15.setFill(gradient);
+				}
+			});
+			timeline15.getKeyFrames().add(kf);
+		}
+		timeline15.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect16 = new Rectangle(0, 0, 150, 20);
+		timeline16 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect16.setFill(gradient);
+				}
+			});
+			timeline16.getKeyFrames().add(kf);
+		}
+		timeline16.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect17 = new Rectangle(0, 0, 150, 20);
+		timeline17 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect17.setFill(gradient);
+				}
+			});
+			timeline17.getKeyFrames().add(kf);
+		}
+		timeline17.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect18 = new Rectangle(0, 0, 150, 20);
+		timeline18 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect18.setFill(gradient);
+				}
+			});
+			timeline18.getKeyFrames().add(kf);
+		}
+		timeline18.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
+  		
+ // ******************* original rect and timeline 		
+  		rect19 = new Rectangle(0, 0, 150, 20);
+		timeline19 = new Timeline();
+		for (int i = 0; i < 10; i++) {
+			int innerIterator = i;
+			KeyFrame kf = new KeyFrame(Duration.millis(30 * innerIterator), new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent ae) {
+					
+					double runningRadius = innerIterator * (widthOfOneGradientCycle / 10);
+					double xStartDynamic = xStartStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yStartDynamic = yStartStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					double xEndDynamic = xEndStatic + (runningRadius * Math.cos(Math.toRadians(gradientSlopeDegree)));
+					double yEndDynamic = yEndStatic + (runningRadius * Math.sin(Math.toRadians(gradientSlopeDegree)));
+					
+					LinearGradient gradient = new LinearGradient(xStartDynamic, yStartDynamic, xEndDynamic, yEndDynamic, 
+							false, CycleMethod.REPEAT, new Stop[] {
+								new Stop(0.0, Color.WHITE),
+								new Stop(0.5, Color.BLACK),
+								new Stop(1.0, Color.WHITE)
+					});
+					rect19.setFill(gradient);
+				}
+			});
+			timeline19.getKeyFrames().add(kf);
+		}
+		timeline19.setCycleCount(Timeline.INDEFINITE);
+//************** end of rect and timeline
+		
 		HBox hbox = new HBox(20);
-		hbox.getChildren().addAll(rect, rect1, rect2, rect3, rect4, rect5, rect6, rect7,rect8, rect9);
+		hbox.getChildren().addAll(rect, rect1, rect2, rect3, rect4, rect5,
+				rect6, rect7,rect8, rect9,rect10, rect11, rect12, rect13, 
+				rect14, rect15, rect16, rect17,rect18, rect19);
 		
 		pane.setCenter(hbox);
 		
@@ -436,7 +767,7 @@ public class E4Test {
  * 		pane.setCenter(rect8);
  * 		pane.setCenter(rect9);
  */ 		
-		pane.setTop(b);
+//		pane.setTop(b);
 /*		try {
  *			pane.setCenter(loader.load());
  *		} catch (IOException e) {
@@ -444,7 +775,7 @@ public class E4Test {
  *			e.printStackTrace();
  *		}
  */
-		pane.setBottom(t);
+//		pane.setBottom(t);
 		
 		timeline.play();
 		timeline1.play();
@@ -456,6 +787,16 @@ public class E4Test {
 		timeline7.play();
 		timeline8.play();
 		timeline9.play();
+		timeline10.play();
+		timeline11.play();
+		timeline12.play();
+		timeline13.play();
+		timeline14.play();
+		timeline15.play();
+		timeline16.play();
+		timeline17.play();
+		timeline18.play();
+		timeline19.play();
 
 	}
 	/*
